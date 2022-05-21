@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Boom calculator</title>
+</head>
+</html>
+
+<body>
+    <div class="bottomContentContainer">
+        <div class="wrapper">
+            <div class="header">
+                <p>Input: </p>
+                <p id="inputText">5</p>
+            </div>
+            <input id="input" />
+            <button onclick="submitInput()">Submit input</button>
+            <div class="header">
+                <p>Limit: </p>
+                <p id="limitText">35</p>
+            </div>
+            <input id="limit"/>
+            <button onclick="submitLimit()">Submit limit</button>
+            <p id="text" class="bigText">0</p>
+            <div class="buttonWrapper">
+                <button class="plusButton counterButton" onclick="handlePlusClick()">+</button>
+                <button class="minusButton counterButton" onclick="handleMinusClick()">-</button>
+            </div>
+        </div>
+        <div class="boomContainer">
+            <p id="boomText" class="boomText bigText"></p>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
